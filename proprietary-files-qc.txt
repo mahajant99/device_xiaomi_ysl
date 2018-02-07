@@ -656,6 +656,9 @@ vendor/lib64/libsensor_reg.so|e48d096044cda0d9e0dac3d3442e9f5d396862e8
 vendor/lib64/libsensor_user_cal.so|3965ea663c25ee07897ef003a13b94f0addde8ab
 vendor/lib64/sensors.ssc.so|dabcea6d758a88dfabd1837fa4bba9c6085ee465
 
+# Power-off charging daemon
+-sbin/charger:sbin/chargeonlymode;rootfs|664dfa548b81cac348f1699222160f8d2b4d247c
+
 # Thermal - From Tissot PKQ1.180917.001/V10.0.12.0.PDHMIXM
 vendor/bin/thermal-engine|e24c041613a4a522e15d54f700e1d1befe7e171e
 -vendor/lib/libthermalclient.so|390eda2d80df6825c09eb504f0630650ea2d30f7
