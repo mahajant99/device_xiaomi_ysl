@@ -209,6 +209,9 @@ on post-fs-data
     # Create directory used for dump collection
     mkdir /data/vendor/ssrdump 0770 root system
 
+    # Start RIL daemon
+    start ril-daemon
+
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
 
