@@ -367,8 +367,12 @@ case "$target" in
         ;;
 esac
 
+
 # Set shared touchpanel nodes ownership (these are proc_symlinks to the real sysfs nodes)
 chown -LR system.system /proc/touchpanel
+
+# Remove recovery cache from persist
+rm -rf /mnt/vendor/persist/cache/recovery
 
 #
 # Make modem config folder and copy firmware config to that folder for RIL
