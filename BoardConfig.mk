@@ -180,7 +180,6 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event1"
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_USE_SDCLANG := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
