@@ -69,6 +69,10 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera2,com.goo
 vendor.camera.aux.packagelist2=com.google.android.GoogleCameraWide,com.dual.GCam,com.Wide.GCam,com.Tele.GCam \
 vendor.camera.hal1.packagelist=com.whatsapp \
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1 \
