@@ -1,19 +1,13 @@
 [
   {
     "remote":      "github",
-    "repository":  "RevanthTolety/vendor_xiaomi_sakura",
+    "repository":  "RevanthTolety/vendor_xiaomi_ysl",
     "target_path": "vendor/xiaomi",
     "branch":      "lineage-16.0"
   },
   {
     "remote":      "github",
-    "repository":  "RevanthTolety/vendor_xiaomi_MiuiCamera",
-    "target_path": "vendor/xiaomi/MiuiCamera",
-    "branch":      "master"
-  },
-  {
-    "remote":      "github",
-    "repository":  "RevanthTolety/kernel_xiaomi_msm8953",
+    "repository":  "RevanthTolety/kernel_xiaomi_ysl",
     "target_path": "kernel/xiaomi/msm8953",
     "branch":      "lineage-16.0"
   },

@@ -85,6 +85,7 @@
     <ctl name="WSA Spk Switch" value="ZERO" />
     <ctl name="SpkrMono WSA_RDAC" value="ZERO" />
     <ctl name="SpkrMono BOOST Switch" value="1" />
+	<ctl name="Speaker PA Open" value="ON" />
     <ctl name="EAR PA Gain" value="POS_6_DB" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
@@ -98,10 +99,6 @@
     <ctl name="DEC4 MUX" value="ZERO" />
     <ctl name="SpkrMono VISENSE Switch" value="0" />
     <ctl name="ADC1_INP1 Switch" value="0" />
-
-    <!--MAX98927 Smart PA-->
-    <ctl name="Boost Output Voltage" value="6.5V" />
-    <!--MAX98927 Smart PA end-->
     
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="0" />
@@ -1131,7 +1128,10 @@
     </path>
 
     <path name="speaker">
-        <ctl name="Boost Output Voltage" value="10V" />
+        <ctl name="Speaker PA Open" value="OFF" />
+        <ctl name="RX3 MIX1 INP1" value="RX1" />
+        <ctl name="RX3 Digital Volume" value="78" />
+        <ctl name="LINE_OUT" value="Switch" />
     </path>
 
     <path name="speaker-and-hdmi">
@@ -1256,7 +1256,10 @@
     </path>
 
     <path name="voice-speaker">
-        <path name="speaker" />
+        <ctl name="Speaker PA Open" value="OFF" />
+        <ctl name="RX3 MIX1 INP1" value="RX1" />
+        <ctl name="RX3 Digital Volume" value="78" />
+        <ctl name="LINE_OUT" value="Switch" />
     </path>
 
     <path name="wsa-voice-speaker">

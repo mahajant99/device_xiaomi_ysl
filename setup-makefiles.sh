@@ -21,7 +21,7 @@ set -e
 INITIAL_COPYRIGHT_YEAR=2019
 
 # Required!
-export DEVICE=sakura
+export DEVICE=ysl
 export VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -41,7 +41,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "sakura"
+write_headers "ysl"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files-qc.txt true
