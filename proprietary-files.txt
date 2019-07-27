@@ -1,82 +1,8 @@
-# Camera
-vendor/bin/mm-qcamera-daemon
-vendor/lib/hw/camera.msm8953.so
-vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_dualcam_refocus.so
-vendor/lib/libarcsoft_high_dynamic_range.so
-vendor/lib/libFaceGrade.so
-vendor/lib/libflash_pmic.so
-vendor/lib/libjpegdhw.so
-vendor/lib/libjpegdmahw.so
-vendor/lib/libjpegehw.so
-vendor/lib/lib_lowlight.so
-vendor/lib/libmibokeh_8953.so
-vendor/lib/libMiWatermark.so
-vendor/lib/libmmcamera_interface.so
-vendor/lib/libmmjpeg_interface.so
-vendor/lib/libmmjpeg.so
-vendor/lib/libmm-qcamera.so
-vendor/lib/libmmqjpeg_codec.so
-vendor/lib/libmmqjpegdma.so
-vendor/lib/libmpbase.so
-vendor/lib/libqomx_core.so
-vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libqomx_jpegenc.so
-vendor/lib/libremosaic_daemon.so
-vendor/lib/libvidhance.so
-vendor/lib/libvidhance_gyro.so
-vendor/lib/libXMFD_AgeGender.so
-vendor/lib/libois_lc898122.so
--vendor/lib/libarcsoft_beautyshot_exin.so
-
-# Camera mmcamera
-vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
-vendor/lib/libmmcamera2_dcrf.so
-vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct.so
-vendor/lib/libmmcamera2_mct_shimlayer.so
-vendor/lib/libmmcamera2_pp_buf_mgr.so
-vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/libmmcamera_csidtg.so
-vendor/lib/libmmcamera_dbg.so
-vendor/lib/libmmcamera_dcrf_lib.so
-vendor/lib/libmmcamera_dummyalgo.so
-vendor/lib/libmmcamera_eebinparse.so
-vendor/lib/libmmcamera_eeprom_util.so
-vendor/lib/libmmcamera_eztune_module.so
-vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
-vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_interface.so
-vendor/lib/libmmcamera_paaf_lib.so
-vendor/lib/libmmcamera_pdaf.so
-vendor/lib/libmmcamera_pdafcamif.so
-vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_quadracfa.so
-vendor/lib/libmmcamera_sw2d_lib.so
-vendor/lib/libmmcamera_thread_services.so
-vendor/lib/libmmcamera_tintless_algo.so
-vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_tuning.so
-vendor/lib/libmmcamera_tuning_lookup.so
-
-# Camera actuators
+# Camera actuators - from Ysl
 vendor/lib/libactuator_ysl_imx486_ofilm_india_i_dw9714v.so
 vendor/lib/libactuator_ysl_ov12a10_sunny_ii_dw9714v.so
 
-# Camera chromatix
+# Camera chromatix - from Ysl
 vendor/lib/libchromatix_ysl_imx486_ofilm_cn_i_common.so
 vendor/lib/libchromatix_ysl_imx486_ofilm_cn_i_cpp_hfr_120.so
 vendor/lib/libchromatix_ysl_imx486_ofilm_cn_i_cpp_hfr_60.so
@@ -504,22 +430,6 @@ vendor/lib/libchromatix_ysl_s5k5e8_aux_sunny_ii_snapshot.so
 vendor/lib/libchromatix_ysl_s5k5e8_aux_sunny_ii_zsl_preview_3a.so
 vendor/lib/libchromatix_ysl_s5k5e8_aux_sunny_ii_zsl_video_3a.so
 
-# Camera configs
-vendor/etc/camera/camera_config.xml
-vendor/etc/camera/csidtg_camera.xml
-vendor/etc/camera/csidtg_chromatix.xml
-vendor/etc/camera/ysl_imx486_ofilm_cn_i_chromatix.xml
-vendor/etc/camera/ysl_imx486_ofilm_india_i_chromatix.xml
-vendor/etc/camera/ysl_ov12a10_sunny_cn_ii_chromatix.xml
-vendor/etc/camera/ysl_ov12a10_sunny_ii_chromatix.xml
-vendor/etc/camera/ysl_s5k3p8sp_ofilm_cn_i_chromatix.xml
-vendor/etc/camera/ysl_s5k3p8sp_ofilm_i_chromatix.xml
-vendor/etc/camera/ysl_s5k3p8sp_sunny_cn_ii_chromatix.xml
-vendor/etc/camera/ysl_s5k3p8sp_sunny_ii_chromatix.xml
-vendor/etc/camera/ysl_s5k5e8_aux_ofilm_i_chromatix.xml
-vendor/etc/camera/ysl_s5k5e8_aux_sunny_ii_chromatix.xml
-
-# Camera eeproms
 vendor/lib/libmmcamera_ysl_imx486_ofilm_india_i.so
 vendor/lib/libmmcamera_ysl_imx486_ofilm_india_i_eeprom.so
 vendor/lib/libmmcamera_ysl_ov12a10_sunny_ii.so
@@ -533,7 +443,80 @@ vendor/lib/libmmcamera_ysl_s5k5e8_aux_ofilm_i_eeprom.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii_eeprom.so
 
-# Camera isp
+# Camera QCOM Daemon - from Ysl
+vendor/bin/mm-qcamera-daemon
+
+# Camera QCOM Libraries - from Ysl
+vendor/lib/hw/camera.msm8953.so
+vendor/lib/libarcsoft_beautyshot.so
+vendor/lib/libarcsoft_dualcam_refocus.so
+vendor/lib/libarcsoft_high_dynamic_range.so
+vendor/lib/libFaceGrade.so
+vendor/lib/libflash_pmic.so
+vendor/lib/libjpegdhw.so
+vendor/lib/libjpegdmahw.so
+vendor/lib/libjpegehw.so
+vendor/lib/lib_lowlight.so
+vendor/lib/libmibokeh_8953.so
+vendor/lib/libMiWatermark.so
+vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmjpeg_interface.so
+vendor/lib/libmmjpeg.so
+vendor/lib/libmm-qcamera.so
+vendor/lib/libmmqjpeg_codec.so
+vendor/lib/libmmqjpegdma.so
+vendor/lib/libmpbase.so
+vendor/lib/libqomx_core.so
+vendor/lib/libqomx_jpegdec.so
+vendor/lib/libqomx_jpegenc_pipe.so
+vendor/lib/libqomx_jpegenc.so
+vendor/lib/libremosaic_daemon.so
+vendor/lib/libvidhance.so
+vendor/lib/libvidhance_gyro.so
+vendor/lib/libXMFD_AgeGender.so
+vendor/lib/libois_lc898122.so
+-vendor/lib/libarcsoft_beautyshot_exin.so
+
+vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_dcrf.so
+vendor/lib/libmmcamera2_frame_algorithm.so
+vendor/lib/libmmcamera2_iface_modules.so
+vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_is.so
+vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_mct_shimlayer.so
+vendor/lib/libmmcamera2_pp_buf_mgr.so
+vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_q3a_core.so
+vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_stats_algorithm.so
+vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera_csidtg.so
+vendor/lib/libmmcamera_dbg.so
+vendor/lib/libmmcamera_dcrf_lib.so
+vendor/lib/libmmcamera_dummyalgo.so
+vendor/lib/libmmcamera_eebinparse.so
+vendor/lib/libmmcamera_eeprom_util.so
+vendor/lib/libmmcamera_eztune_module.so
+vendor/lib/libmmcamera_facedetection_lib.so
+vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc2.so
+vendor/lib/libmmcamera_hdr_gb_lib.so
+vendor/lib/libmmcamera_imglib.so
+vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmcamera_paaf_lib.so
+vendor/lib/libmmcamera_pdaf.so
+vendor/lib/libmmcamera_pdafcamif.so
+vendor/lib/libmmcamera_ppbase_module.so
+vendor/lib/libmmcamera_quadracfa.so
+vendor/lib/libmmcamera_sw2d_lib.so
+vendor/lib/libmmcamera_thread_services.so
+vendor/lib/libmmcamera_tintless_algo.so
+vendor/lib/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib/libmmcamera_tuning.so
+vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
 vendor/lib/libmmcamera_isp_be_stats44.so
@@ -569,28 +552,37 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 
-# Camera HIDL
+# Camera XML Configs - from Ysl
+vendor/etc/camera/camera_config.xml
+vendor/etc/camera/csidtg_camera.xml
+vendor/etc/camera/csidtg_chromatix.xml
+vendor/etc/camera/ysl_imx486_ofilm_cn_i_chromatix.xml
+vendor/etc/camera/ysl_imx486_ofilm_india_i_chromatix.xml
+vendor/etc/camera/ysl_ov12a10_sunny_cn_ii_chromatix.xml
+vendor/etc/camera/ysl_ov12a10_sunny_ii_chromatix.xml
+vendor/etc/camera/ysl_s5k3p8sp_ofilm_cn_i_chromatix.xml
+vendor/etc/camera/ysl_s5k3p8sp_ofilm_i_chromatix.xml
+vendor/etc/camera/ysl_s5k3p8sp_sunny_cn_ii_chromatix.xml
+vendor/etc/camera/ysl_s5k3p8sp_sunny_ii_chromatix.xml
+vendor/etc/camera/ysl_s5k5e8_aux_ofilm_i_chromatix.xml
+vendor/etc/camera/ysl_s5k5e8_aux_sunny_ii_chromatix.xml
+
+# Camera HIDL - from Ysl (HACK NEEDED)
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 
-# Consumer IR - from sakura
-vendor/lib64/hw/consumerir.default.so|bb9e3f31d4ec8b199fc294577241226c531dfff2
-
-# Display caliberation .xml's from ysl
+# Display Calibration - from Ysl
 vendor/etc/qdcm_calib_data_auo_ili7807d_hd720_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_shenchao_ili9881c_hd720p_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_truly_hx8394f_hd720_video_mode_dsi_panel.xml
 
-# Fingerprint
+# Fingerprint - from Ysl
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 lib/android.hardware.biometrics.fingerprint@2.1.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-<<<<<<< HEAD
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-=======
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
@@ -602,4 +594,3 @@ vendor/lib/libgf_hal.so
 vendor/lib/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
->>>>>>> 8bb6ecb... ysl: Initial Rebase From Sakura
