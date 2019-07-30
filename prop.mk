@@ -1,5 +1,5 @@
 #
-# system.prop for sakura
+# system.prop for ysl
 #
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -95,7 +95,6 @@ ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=320 \
 ro.vendor.display.cabl=2 \
 sdm.debug.disable_skip_validate=1 \
-vendor.display.enable_default_color_mode=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1
