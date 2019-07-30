@@ -1,8 +1,8 @@
-# Camera actuators - from Ysl
+# Camera actuators - from Ysl PKQ1.181203.001/V10.3.2.0.PEFCNXM
 vendor/lib/libactuator_ysl_imx486_ofilm_india_i_dw9714v.so
 vendor/lib/libactuator_ysl_ov12a10_sunny_ii_dw9714v.so
 
-# Camera chromatix - from Ysl
+# Camera chromatix - from Ysl PKQ1.181203.001/V10.3.2.0.PEFCNXM
 vendor/lib/libchromatix_ysl_imx486_ofilm_cn_i_common.so
 vendor/lib/libchromatix_ysl_imx486_ofilm_cn_i_cpp_hfr_120.so
 vendor/lib/libchromatix_ysl_imx486_ofilm_cn_i_cpp_hfr_60.so
@@ -443,10 +443,10 @@ vendor/lib/libmmcamera_ysl_s5k5e8_aux_ofilm_i_eeprom.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii_eeprom.so
 
-# Camera QCOM Daemon - from Ysl
+# Camera QCOM Daemon - from Ysl PKQ1.181203.001/V10.3.2.0.PEFCNXM
 vendor/bin/mm-qcamera-daemon
 
-# Camera QCOM Libraries - from Ysl
+# Camera QCOM Libraries - from Ysl PKQ1.181203.001/V10.3.2.0.PEFCNXM
 vendor/lib/hw/camera.msm8953.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
@@ -552,7 +552,7 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 
-# Camera XML Configs - from Ysl
+# Camera XML Configs - from Ysl PKQ1.181203.001/V10.3.2.0.PEFCNXM
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/csidtg_camera.xml
 vendor/etc/camera/csidtg_chromatix.xml
@@ -567,19 +567,19 @@ vendor/etc/camera/ysl_s5k3p8sp_sunny_ii_chromatix.xml
 vendor/etc/camera/ysl_s5k5e8_aux_ofilm_i_chromatix.xml
 vendor/etc/camera/ysl_s5k5e8_aux_sunny_ii_chromatix.xml
 
-# Camera HIDL - from Ysl (HACK NEEDED)
+# Camera HIDL - from Ysl PKQ1.181203.001/V10.3.2.0.PEFCNXM (HACK NEEDED)
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 
-# Display Calibration - from Ysl
+# Display Calibration - from Ysl PKQ1.181203.001/V10.3.2.0.PEFCNXM
 vendor/etc/qdcm_calib_data_auo_ili7807d_hd720_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_shenchao_ili9881c_hd720p_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_truly_hx8394f_hd720_video_mode_dsi_panel.xml
 
-# Fingerprint - from Ysl
+# Fingerprint - from Ysl PKQ1.181203.001/V10.3.2.0.PEFCNXM PKQ1.181203.001/V10.3.2.0.PEFCNXM
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 lib/android.hardware.biometrics.fingerprint@2.1.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
