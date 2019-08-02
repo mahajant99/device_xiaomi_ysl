@@ -18,7 +18,7 @@
 
 set -e
 
-INITIAL_COPYRIGHT_YEAR=2017
+INITIAL_COPYRIGHT_YEAR=2019
 
 # Required!
 export DEVICE=sakura
