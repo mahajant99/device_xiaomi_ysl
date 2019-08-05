@@ -1,13 +1,13 @@
 [
   {
     "remote":      "github",
-    "repository":  "RevanthTolety/vendor_xiaomi_ysl",
+    "repository":  "mahajant99/vendor_xiaomi_ysl",
     "target_path": "vendor/xiaomi",
     "branch":      "lineage-16.0"
   },
   {
     "remote":      "github",
-    "repository":  "RevanthTolety/kernel_xiaomi_ysl",
+    "repository":  "mahajant99/kernel_xiaomi_msm8953_64",
     "target_path": "kernel/xiaomi/msm8953",
     "branch":      "lineage-16.0"
   },
