@@ -54,6 +54,17 @@ on post-fs-data
 #Create folder for mm-qcamera-daemon
 mkdir /data/vendor/qcam/ 0770 camera camera
 
+# modify by zhoudan for fingerprint
+    mkdir /data/vendor/fpc 0700 system system
+    mkdir /data/vendor/goodix 0700 system system
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+
+# modify by zhoudan for fingerprint
+	copy /data/vendor/fpc/user.db /data/vendor_de/0/fpdata/user.db
+	chown system system /data/vendor_de/0/fpdata/user.db
+	rm /data/vendor/fpc/user.db
+
 #start camera server as daemon
 service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     class late_start
