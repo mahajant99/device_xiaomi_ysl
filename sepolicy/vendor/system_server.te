@@ -12,3 +12,6 @@ allow system_server proc_touchpanel:lnk_file read;
 
 # vibrator
 allow system_server sysfs_vibrator:file read;
+
+# smart charging
+allow system_server sysfs_battery_supply:file rw_file_perms;
