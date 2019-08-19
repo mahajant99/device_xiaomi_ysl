@@ -14,11 +14,9 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+ifeq ($(TARGET_DEVICE),ysl)
 
-ifneq ($(filter ysl,$(TARGET_DEVICE)),)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
+include $(call all-subdir-makefiles)
 
 include $(CLEAR_VARS)
 
@@ -116,7 +114,6 @@ $(RFS_MSM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM SLPI folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
-	$(hide) ln -sf /data/vendor/tombstones/rfs/modem $@/ramdumps
 	$(hide) ln -sf /data/vendor/tombstones/rfs/slpi $@/ramdumps
 	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/slpi $@/readwrite
 	$(hide) ln -sf /mnt/vendor/persist/rfs/shared $@/shared
