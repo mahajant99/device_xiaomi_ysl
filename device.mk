@@ -130,6 +130,11 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     Snap
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbluetooth_qti \
+    libbt-logClient.so
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
