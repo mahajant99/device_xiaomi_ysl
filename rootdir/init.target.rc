@@ -69,6 +69,17 @@ on post-fs-data
     mkdir /data/misc/seemp 0700 system system
     mkdir /data/misc/audio_pp 0771 media audio
 
+# modify by zhoudan for fingerprint
+    mkdir /data/vendor/fpc 0700 system system
+    mkdir /data/vendor/goodix 0700 system system
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+
+# modify by zhoudan for fingerprint
+	copy /data/vendor/fpc/user.db /data/vendor_de/0/fpdata/user.db
+	chown system system /data/vendor_de/0/fpdata/user.db
+	rm /data/vendor/fpc/user.db
+
 #Create folder for mm-qcamera-daemon
 mkdir /data/vendor/camera 0770 camera camera
 mkdir /data/misc/camera 0770 camera camera
@@ -207,6 +218,11 @@ on boot
     chown system system /dev/cpuset/camera-daemon/tasks
     chmod 0664 /dev/cpuset/camera-daemon/tasks
     chown system system /sys/kernel/hbtp/display_pwr
+
+# For generic DT2W
+    chown system system /dev/input/event1
+	chown system system /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0038/fts_gesture_mode
+    chmod 0664 /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0038/fts_gesture_mode
 
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
