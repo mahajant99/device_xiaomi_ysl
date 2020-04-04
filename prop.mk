@@ -203,6 +203,10 @@ persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
+# Sensors
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sensor.proximity=true
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true \
