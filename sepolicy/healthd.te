@@ -1,0 +1,4 @@
+allow healthd sysfs:file { read };
+allow healthd sysfs:file { open };
+allow healthd sysfs:file { getattr };
+allow healthd healthd:capability { sys_admin };
