@@ -134,7 +134,8 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbluetooth_qti \
-    libbt-logClient.so
+    libbt-logClient.so \
+    libbtconfigstore \
 
 # Configstore
 PRODUCT_PACKAGES += \
