@@ -1,3 +1,15 @@
+# Block devices
+/dev/block/platform/soc/7824900.sdhci/by-name/aboot             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/cmnlib             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/cmnlib64             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/devcfg             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/dsp             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/keymaster             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/lksecapp             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/rpm             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/sbl1             u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/tz             u:object_r:custom_ab_block_device:s0
+
 # Camera
 /(product|system/product)/(lib|lib64)/vendor\.qti\.hardware\.camera\.device@1\.0\.so   u:object_r:same_process_hal_file:s0
 
@@ -44,6 +56,12 @@
 /sys/devices(/platform)?/soc/leds-qpnp-[0-9]+/leds(/.*)?				u:object_r:sysfs_leds:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/enable_dt2w		u:object_r:proc_touchpanel:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/disable_keys         u:object_r:proc_touchpanel:s0
+
+# Shell Script
+/(vendor|system/vendor)/bin/init\.goodix\.sh	u:object_r:init_fingerprint_exec:s0
+ 
+# Ir
+/dev/peel_ir					u:object_r:lirc_device:s0
 
 # Root folders
 /firmware(/.*)?          u:object_r:firmware_file:s0

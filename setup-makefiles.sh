@@ -18,6 +18,11 @@
 
 set -e
 
+# Required!
+export DEVICE=ysl
+export DEVICE_COMMON=msm8953-common
+export VENDOR=xiaomi
+
 INITIAL_COPYRIGHT_YEAR=2017
 
 # Load extract_utils and do some sanity checks

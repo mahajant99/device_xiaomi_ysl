@@ -14,9 +14,18 @@
 # limitations under the License.
 #
 
+# This contains the module build definitions for the hardware-specific
+# components for this device.
+#
+# As much as possible, those components should be built unconditionally,
+# with device-specific names to avoid collisions, to avoid device-specific
+# bitrot and build breakages. Building a component unconditionally does
+# *not* include it on all devices, so it is safe even with hardware-specific
+# components.
+
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter ysl,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),ysl)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
@@ -51,6 +60,15 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) rm -rf $(WCNSS_DAT_SYMLINK)
 	$(hide) ln -sf $(ACTUAL_DAT_FILE) $(WCNSS_DAT_SYMLINK)
 	$(hide) touch $@
+
+WCNSS_MAC_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/prima/wlan_mac.bin
+$(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@echo "WCNSS MAC bin link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /mnt/vendor/persist/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
 
 #A/B builds require us to create the mount points at compile time.
 #Just creating it for all cases since it does not hurt.
