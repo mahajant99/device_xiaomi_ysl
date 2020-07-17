@@ -196,7 +196,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2020-02-05
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
+#include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
@@ -224,3 +224,4 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 # Inherit from the proprietary version
 -include vendor/xiaomi/ysl/BoardConfigVendor.mk
 -include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+
