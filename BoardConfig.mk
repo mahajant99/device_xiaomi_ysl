@@ -191,16 +191,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-02-05
 
-# SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
-
 # Sepolicy
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
-# We modify several neverallows, so let the build proceed
-ifneq ($(TARGET_BUILD_VARIANT),user)
-SELINUX_IGNORE_NEVERALLOWS := true
-endif
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
