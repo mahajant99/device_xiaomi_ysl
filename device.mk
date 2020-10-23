@@ -130,6 +130,11 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     Snap
 
+# Binder
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhwbinder.vendor
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
