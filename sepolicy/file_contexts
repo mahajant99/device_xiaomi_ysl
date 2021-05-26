@@ -29,6 +29,10 @@
 /data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
 
+# Firmware
+/firmware(/.*)?                                               u:object_r:firmware_file:s0
+/persist(/.*)?                                                u:object_r:mnt_vendor_file:s0
+
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.widevine         u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.clearkey         u:object_r:hal_drm_clearkey_exec:s0
@@ -56,12 +60,10 @@
 /sys/devices(/platform)?/soc/leds-qpnp-[0-9]+/leds(/.*)?				u:object_r:sysfs_leds:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/enable_dt2w		u:object_r:proc_touchpanel:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/disable_keys         u:object_r:proc_touchpanel:s0
+<<<<<<< HEAD
 
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh	u:object_r:init_fingerprint_exec:s0
  
 # Ir
 /dev/peel_ir					u:object_r:lirc_device:s0
-
-# Root folders
-/firmware(/.*)?          u:object_r:firmware_file:s0
