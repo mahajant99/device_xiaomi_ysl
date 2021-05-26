@@ -49,6 +49,10 @@ qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd
 
+# Bpf
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.kernel.ebpf.supported=1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.display.lmax=1280x720 \
@@ -67,7 +71,7 @@ vidc.enc.dcvs.extra-buff-count=2 \
 vendor.camera.aux.packageblacklist=com.discord \
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera2,com.google.android.GoogleCamera \
 vendor.camera.aux.packagelist2=com.google.android.GoogleCameraWide,com.dual.GCam,com.Wide.GCam,com.Tele.GCam \
-vendor.camera.hal1.packagelist=com.whatsapp \
+vendor.camera.hal1.packagelist=com.whatsapp
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -95,7 +99,7 @@ debug.sf.latch_unsignaled=1 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
-persist.debug.wfd.enable=1 \
+persist.debug.wfd.enable=0 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
